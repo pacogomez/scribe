@@ -10,8 +10,9 @@ import (
 )
 
 type Globals struct {
-	Version VersionFlag `name:"version" short:"v" help:"Print version information and quit"`
-	Config  ConfigCmd   `cmd:"" help:"Display current config" default:"0"`
+	Version   VersionFlag  `name:"version" short:"v" help:"Print version information and quit"`
+	Config    ConfigCmd    `cmd:"" help:"Display current config" default:"0"`
+	Dashboard DashboardCmd `cmd:""`
 }
 
 type ConfigCmd struct {
